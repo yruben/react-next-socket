@@ -1,7 +1,7 @@
 <h1 align="center">react-socket-chat 🚀</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-0.1.0-blue.svg?cacheSeconds=2592000" />
-  <a href="https://github.com/Yruben1901/react-next-socket" target="_blank">
+  <a href="https://github.com/yruben/react-next-socket" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
   </a>
 </p>
@@ -63,4 +63,4 @@ yarn dev
 
 👤 **Yainier M. Ruben <y.ruben1901@gmail.com>**
 
-* Github: [@yruben1901](https://github.com/yruben1901)
+* Github: [@yruben](https://github.com/yruben)
