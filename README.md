@@ -4,9 +4,6 @@
   <a href="https://github.com/Yruben1901/react-next-socket" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
   </a>
-  <a href="https://github.com/juunone/react-socket-chat/blob/master/LICENSE" target="_blank">
-    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
-  </a>
 </p>
 
 - this is chatting application  
