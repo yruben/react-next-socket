@@ -11,12 +11,10 @@ const theme = {
 
 const GlobalStyle = createGlobalStyle`
   html{
-    scroll-behavior: smooth;
-    height: 100%;
-    margin: 0;
+    scroll-behavior: smooth;    
   }
 
-  body { 
+  body {
     font-family: ${props => props.theme.fontFamily};
     margin: ${props => props.theme.margin};
     padding: ${props => props.theme.padding};

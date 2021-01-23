@@ -59,12 +59,13 @@ const List = ({ router }) => {
         {/*TODO REVISAR SEO*/}
         <meta name="description" content="Boxitas Next Socket.io Chatting app"/>
         <meta name="keywords" content="nextjs, boxitas,react,socket.io,chatting,javascript" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
       </Head>
       <DynamicHeader user={state.user} />
       <main>{state.data && <DynamicChatRoomWidget user={state.user} data={state.data} />}</main>
     </Layout>
   )
-};
+}
 
 export default withRouter(List)
 

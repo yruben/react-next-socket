@@ -1,60 +1,59 @@
 const express = require('express')
 const http = require('http')
 const socketIO = require('socket.io')
-const port = 3001;
+const port = 3001
 const app = express()
 const server = http.createServer(app)
 const io = socketIO(server)
 
 let data = [
   {
-    // id: '최준원 회장님',
     id: 'Carlos Enrique Casemiro',
     contents:[
       {
-        name:'Marco Asensio',//장만월 사장님
-        picture: '/assets/images/1.jpg',
+        name:'Linda Burrow',
+        picture: '/assets/images/LB.jpg',
         endedAt:1580357729003,
         messages:[
           {
-            user:'Marco Asensio',//장만월 사장님
+            user:'Linda Burrow',
             message:'Dónde estás?',
             isRead:true
           },
           {
-            user:'Carlos Enrique Casemiro',    // id: '최준원 회장님',
+            user:'Carlos Enrique Casemiro',
             message:'Estoy comiendo.',
             isRead:true
           },
           {
-            user:'Marco Asensio',//장만월 사장님
+            user:'Linda Burrow',
             message:'Cuando vienes?',
             isRead:false
           },
           {
-            user:'Marco Asensio',//장만월 사장님
-            message:'Ven rápido ~~~',
+            user:'Linda Burrow',
+            message:'Necesito verte urgente...',
             isRead:false
           }
         ]
       },
       {
-        name: 'Abraham Lincoln',//신정근 바텐더
-        picture: '/assets/images/3.jpg',
+        name: 'Abraham Lincoln',
+        picture: '/assets/images/AL.jpg',
         endedAt:1580455264061,
         messages:[
           {
-            user:'Abraham Lincoln',//신정근 바텐더
-            message:'presidente',
+            user:'Abraham Lincoln',
+            message:'Presidente',
             isRead:true
           },
           {
-            user:'Carlos Enrique Casemiro',    // id: '최준원 회장님',
+            user:'Carlos Enrique Casemiro',
             message:'Si?',
             isRead:true
           },
           {
-            user:'Abraham Lincoln',//신정근 바텐더
+            user:'Abraham Lincoln',
             message:'Compra un poco de vino en el camino!',
             isRead:false
           }
@@ -62,17 +61,17 @@ let data = [
       },
       {
         name: 'Scarlet Johanson',
-        picture: '/assets/images/4.jpg',
+        picture: '/assets/images/SJ.jpg',
         endedAt:1580791165818,
         messages:[
           {
-            user:'Carlos Enrique Casemiro',    // id: '최준원 회장님',
+            user:'Carlos Enrique Casemiro',
             message:'Momia',
             isRead:true
           },
           {
             user:'Scarlet Johanson',
-            message:'Si?',
+            message:'QUEEE?',
             isRead:true
           },
           {
@@ -84,11 +83,11 @@ let data = [
       },
       {
         name: 'Robert Downey Jr',
-        picture: '/assets/images/6.jpg',
+        picture: '/assets/images/RDJ.jpg',
         endedAt:1580435264061,
         messages:[
           {
-            user:'Carlos Enrique Casemiro',    // id: '최준원 회장님',
+            user:'Carlos Enrique Casemiro',
             message:'El mismo de siempre',
             isRead:true
           },
@@ -98,7 +97,7 @@ let data = [
             isRead:true
           },
           {
-            user:'Carlos Enrique Casemiro',    // id: '최준원 회장님',
+            user:'Carlos Enrique Casemiro',
             message:'Estas teniendo buenas vacaciones?',
             isRead:true
           }
@@ -106,11 +105,11 @@ let data = [
       },
       {
         name: 'Marco Aurelio',
-        picture: '/assets/images/5.jpg',
+        picture: '/assets/images/IA.jpg',
         endedAt:1580436264061,
         messages:[
           {
-            user:'Carlos Enrique Casemiro',    // id: '최준원 회장님',
+            user:'Carlos Enrique Casemiro',
             message:'Marco Aurelio dígame...',
             isRead:true
           },
@@ -120,7 +119,7 @@ let data = [
             isRead:true
           },
           {
-            user:'Carlos Enrique Casemiro',    // id: '최준원 회장님',
+            user:'Carlos Enrique Casemiro',
             message:'Cómo está tu salud?',
             isRead:true
           }
@@ -128,7 +127,7 @@ let data = [
       },
       {
         name: 'Cardi B',
-        picture: '/assets/images/7.jpg',
+        picture: '/assets/images/CB.jpg',
         endedAt:1580136264061,
         messages:[
           {
@@ -137,18 +136,18 @@ let data = [
             isRead:true
           },
           {
-            user:'Carlos Enrique Casemiro',    // id: '최준원 회장님',
-            message:'Eres nuevo?',
+            user:'Carlos Enrique Casemiro',
+            message:'Eres nueva?',
             isRead:true
           },
           {
             user:'Cardi B',
-            message:'Sí por favor.',
+            message:'Sí por favor, ayúdame.',
             isRead:true
           },
           {
-            user:'Carlos Enrique Casemiro',    // id: '최준원 회장님',
-            message:'Bienvenidos :D',
+            user:'Carlos Enrique Casemiro',
+            message:'Bienvenida :D',
             isRead:true
           },
         ]
@@ -156,31 +155,31 @@ let data = [
     ],
   },
   {
-    id: 'Marco Asensio',//장만월 사장님
+    id: 'Linda Burrow',//장만월 사장님
     contents:[
       {
         name:'Carlos Enrique Casemiro',    // id: '최준원 회장님',
-        picture: '/assets/images/8.jpg',
+        picture: '/assets/images/CEC.jpg',
         endedAt:1580357729003,
         messages:[
           {
-            user:'Marco Asensio',//장만월 사장님
-            message:'QUE BOLA?',
+            user:'Linda Burrow',//장만월 사장님
+            message:'Dónde estás??',
             isRead:true
           },
           {
             user:'Carlos Enrique Casemiro',    // id: '최준원 회장님',
-            message:'AQUI.',
+            message:'Estoy comiendo.',
             isRead:true
           },
           {
-            user:'Marco Asensio',//장만월 사장님
-            message:'QUE BOLA??',
+            user:'Linda Burrow',//장만월 사장님
+            message:'Cuándo vienes?',
             isRead:true
           },
           {
-            user:'Marco Asensio',//장만월 사장님
-            message:'AQUI',
+            user:'Linda Burrow',//장만월 사장님
+            message:'Necesito verte urgente...',
             isRead:true
           }
         ]
@@ -192,22 +191,22 @@ let data = [
     contents:[
       {
         name:'Carlos Enrique Casemiro',    // id: '최준원 회장님',
-        picture: '/assets/images/8.jpg',
+        picture: '/assets/images/CEC.jpg',
         endedAt:1580455264061,
         messages:[
           {
             user:'Abraham Lincoln',//신정근 바텐더
-            message:'AQUI',
+            message:'Presidente',
             isRead:true
           },
           {
             user:'Carlos Enrique Casemiro',    // id: '최준원 회장님',
-            message:'AQUI',
+            message:'Si?',
             isRead:true
           },
           {
             user:'Abraham Lincoln',//신정근 바텐더
-            message:'AQUI ',
+            message:'Compra un poco de vino en el camino!',
             isRead:true
           }
         ]
@@ -219,12 +218,12 @@ let data = [
     contents:[
       {
         name:'Carlos Enrique Casemiro',    // id: '최준원 회장님',
-        picture: '/assets/images/8.jpg',
+        picture: '/assets/images/CEC.jpg',
         endedAt:1580791165818,
         messages:[
           {
             user:'Carlos Enrique Casemiro',    // id: '최준원 회장님',
-            message:'PARTY',
+            message:'Momia',
             isRead:true
           },
           {
@@ -234,7 +233,7 @@ let data = [
           },
           {
             user:'Scarlet Johanson',//이미라 의사
-            message:'OEOEOEOEOE!',
+            message:'Por favor habla!',
             isRead:true
           }
         ]
@@ -246,22 +245,22 @@ let data = [
     contents:[
       {
         name:'Carlos Enrique Casemiro',    // id: '최준원 회장님',
-        picture: '/assets/images/8.jpg',
+        picture: '/assets/images/CEC.jpg',
         endedAt:1580435264061,
         messages:[
           {
             user:'Carlos Enrique Casemiro',    // id: '최준원 회장님',
-            message:'PSSS',
+            message:'El mismo de siempre',
             isRead:true
           },
           {
             user:'Robert Downey Jr',//구찬성 지배인
-            message:'TAS?',
+            message:'Si?',
             isRead:true
           },
           {
             user:'Carlos Enrique Casemiro',    // id: '최준원 회장님',
-            message:'NO?',
+            message:'Estas teniendo buenas vacaciones?',
             isRead:true
           }
         ]
@@ -273,12 +272,12 @@ let data = [
     contents:[
       {
         name:'Carlos Enrique Casemiro',    // id: '최준원 회장님',
-        picture: '/assets/images/8.jpg',
+        picture: '/assets/images/CEC.jpg',
         endedAt:1580435864061,
         messages:[
           {
             user:'Carlos Enrique Casemiro',    // id: '최준원 회장님',
-            message:'Marco Aurelio?',//노준석 총지배인
+            message:'Marco Aurelio dígame...',//노준석 총지배인
             isRead:true
           },
           {
@@ -288,7 +287,7 @@ let data = [
           },
           {
             user:'Carlos Enrique Casemiro',    // id: '최준원 회장님',
-            message:'SIII?',
+            message:'Cómo está tu salud?',
             isRead:true
           }
         ]
@@ -300,27 +299,27 @@ let data = [
     contents:[
       {
         name:'Carlos Enrique Casemiro',    // id: '최준원 회장님',
-        picture: '/assets/images/8.jpg',
+        picture: '/assets/images/CEC.jpg',
         endedAt:1580136264061,
         messages:[
           {
             user:'Cardi B',//김유나 인턴
-            message:'OH!',
+            message:'Buenos días!',
             isRead:true
           },
           {
             user:'Carlos Enrique Casemiro',    // id: '최준원 회장님',
-            message:'WTF?',
+            message:'Eres nueva?',
             isRead:true
           },
           {
             user:'Cardi B',//김유나 인턴
-            message:'DOT.',
+            message:'Sí por favor, ayúdame.',
             isRead:true
           },
           {
             user:'Carlos Enrique Casemiro',    // id: '최준원 회장님',
-            message:'SENTIMENT',
+            message:'Bienvenida :D',
             isRead:true
           },
         ]
@@ -332,14 +331,14 @@ let data = [
 io.on('connection', socket => {
 
   socket.on('send message', (user, target, msg, isPicture) => {
-    const copyData = [...data];
-    const newDate = + new Date();
+    const copyData = [...data]
+    const newDate = + new Date()
 
     copyData.forEach(v => {
       if(v.id === user){
         v.contents.forEach(key => {
           if(key.name === target){
-            key.endedAt = newDate;
+            key.endedAt = newDate
             key.messages.push({
               user: user,
               message: isPicture === true ? '' : msg,
@@ -347,11 +346,11 @@ io.on('connection', socket => {
               isRead: true
             })
           }
-        });
+        })
       } else if (v.id === target) {
         v.contents.forEach(key => {
           if(key.name === user){
-            key.endedAt = newDate;
+            key.endedAt = newDate
             key.messages.push({
               user: user,
               message: isPicture === true ? '' : msg,
@@ -359,34 +358,34 @@ io.on('connection', socket => {
               isRead: false
             })
           }
-        });
+        })
       }
     })
 
-    const targetData = copyData.filter(v => v.id === user)[0];
-    const targetMessages = targetData ? targetData.contents.filter(value => value.name === target)[0].messages : [];
-    io.sockets.emit('receive message', targetMessages);
+    const targetData = copyData.filter(v => v.id === user)[0]
+    const targetMessages = targetData ? targetData.contents.filter(value => value.name === target)[0].messages : []
+    io.sockets.emit('receive message', targetMessages)
 
-    const reduceTargetData = copyData.filter(v => v.id === target)[0];
-    socket.broadcast.emit('receive data', reduceTargetData);
+    const reduceTargetData = copyData.filter(v => v.id === target)[0]
+    socket.broadcast.emit('receive data', reduceTargetData)
   })
 
   socket.on('receive data', (user) => {
-    const newData = data.filter(v => v.id === user)[0];
-    io.sockets.to(socket.id).emit('receive data', newData);
+    const newData = data.filter(v => v.id === user)[0]
+    io.sockets.to(socket.id).emit('receive data', newData)
   })
 
   socket.on('receive message', (user, target) => {
-    const targetData = data.filter(v => v.id === user)[0];
-    const targetMessages = targetData ? targetData.contents.filter(value => value.name === target)[0].messages : [];
-    io.sockets.emit('receive message', targetMessages);
+    const targetData = data.filter(v => v.id === user)[0]
+    const targetMessages = targetData ? targetData.contents.filter(value => value.name === target)[0].messages : []
+    io.sockets.emit('receive message', targetMessages)
   })
 
   socket.on('read message', (user, target) => {
     const copyData = [...data]
     const userIdx = copyData.findIndex(v => v.id === user)
     if(userIdx !== -1){
-      const mappingData = copyData[userIdx].contents.map(key => {
+      copyData[userIdx].contents = copyData[userIdx].contents.map(key => {
         if(key.name === target){
           key.messages.forEach(value => {
             if(value.user === target) value.isRead = true
@@ -394,7 +393,7 @@ io.on('connection', socket => {
         }
         return key
       })
-      copyData[userIdx].contents = mappingData
+      // copyData[userIdx].contents = mappingData
     }
 
     const newData = copyData.filter(v => v.id === user)[0]

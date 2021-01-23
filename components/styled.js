@@ -28,14 +28,33 @@ export const Title = styled.h3`
 export const SelectUserWidget = styled.div`
   text-align: center;
   margin: 20vh auto;
-  line-height: 2;  
+  line-height: 2; 
+  width: 670px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;  
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px; 
+`
+
+export const SelectUserWrapper = styled.div`
+  width: 100%;
+  margin:0 auto;
+  background-image: radial-gradient(circle at 29% 55%, hsla(329,0%,99%,0.05) 0%, hsla(329,0%,99%,0.05) 4%,transparent 4%, transparent 44%,transparent 44%, transparent 100%),radial-gradient(circle at 85% 89%, hsla(329,0%,99%,0.05) 0%, hsla(329,0%,99%,0.05) 51%,transparent 51%, transparent 52%,transparent 52%, transparent 100%),radial-gradient(circle at 6% 90%, hsla(329,0%,99%,0.05) 0%, hsla(329,0%,99%,0.05) 53%,transparent 53%, transparent 64%,transparent 64%, transparent 100%),radial-gradient(circle at 35% 75%, hsla(329,0%,99%,0.05) 0%, hsla(329,0%,99%,0.05) 6%,transparent 6%, transparent 98%,transparent 98%, transparent 100%),radial-gradient(circle at 56% 75%, hsla(329,0%,99%,0.05) 0%, hsla(329,0%,99%,0.05) 16%,transparent 16%, transparent 23%,transparent 23%, transparent 100%),radial-gradient(circle at 42% 0%, hsla(329,0%,99%,0.05) 0%, hsla(329,0%,99%,0.05) 3%,transparent 3%, transparent 26%,transparent 26%, transparent 100%),radial-gradient(circle at 29% 28%, hsla(329,0%,99%,0.05) 0%, hsla(329,0%,99%,0.05) 51%,transparent 51%, transparent 75%,transparent 75%, transparent 100%),radial-gradient(circle at 77% 21%, hsla(329,0%,99%,0.05) 0%, hsla(329,0%,99%,0.05) 35%,transparent 35%, transparent 55%,transparent 55%, transparent 100%),radial-gradient(circle at 65% 91%, hsla(329,0%,99%,0.05) 0%, hsla(329,0%,99%,0.05) 46%,transparent 46%, transparent 76%,transparent 76%, transparent 100%),linear-gradient(123deg, rgb(83, 91, 235),rgb(76, 11, 174));   
 `
 
 export const SelectList = styled.select`
-  width: 20%;
   margin-right: 1em;
   height: 30px;
-  border:1px solid #ddd;
+  border:1px solid #545869;
+  font-size: 15px;
+  color: #552055;
+  line-height: 1.2;
+  display: block;
+  width: 50%;
+  background: transparent;
+  padding: 0 5px;
+  margin: 0 auto;
 `
 
 export const SelectButton = styled.button`
@@ -74,6 +93,13 @@ export const ChatRoomDividerRight = styled.div`
 `
 
 export const ChatRoomPanelImg = styled.img`
+  width:5rem;
+  height:5rem;
+  border-radius:50%;
+  border:1px solid #ddd;
+  animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+`
+export const LoginPanelImg = styled.img`
   width:5rem;
   height:5rem;
   border-radius:50%;

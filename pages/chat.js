@@ -14,12 +14,12 @@ const DynamicFooter = dynamic(() => import('../components/Footer'))
 
 const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop)
 
-const Chat = (props) => {
+const Chat = ({ router }) => {
   const socket = useContext(SocketContext)
-  const { router } = props
   const [state, setState] = useState({
     user: router.query.user,
     target: router.query.target,
+    targetInfo:router.query.targetInfo,
     messages:[]
   })
   const [debounceMessage, setDebounceMessage] = useState('')
@@ -113,8 +113,9 @@ const Chat = (props) => {
         <link rel='icon' href='/favicon.ico' />
         <meta name="description" content="Boxitas Next Socket.io Chatting app"/>
         <meta name="keywords" content="nextjs, boxitas,react,socket.io,chatting,javascript" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
       </Head>
-      <DynamicHeader user={state.user} target={state.target} />
+      <DynamicHeader user={state.user} target={state.target} targetInfo={state.targetInfo}/>
       {state.messages.length ? renderChatMessages() : ''}
       <DynamicFooter debounceMessage={debounceMessage} setDebounceMessage={setDebounceMessage} sendMessages={sendMessages} />
       <div ref={myRef} style={{visibility:'hidden'}}></div>

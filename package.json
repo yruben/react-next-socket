@@ -1,21 +1,19 @@
 {
-  "name": "react-socket-chat",
+  "name": "nextjs-chat-socket.io",
   "description": "This is for chatting application 🌐",
   "version": "0.1.0",
   "private": true,
+  "author": "Yainier M. Ruben",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "server": "node server.js"
   },
-  "bugs": {
-    "url": "https://github.com/juunone/react-socket-chat/issues"
-  },
   "keywords": [
     "nextJS",
     "reactJS",
-    "socket-io"
+    "socket.io"
   ],
   "engines": {
     "node": ">=10.16.0"
