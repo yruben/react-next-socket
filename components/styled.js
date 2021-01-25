@@ -6,7 +6,6 @@ export const HeaderWrap = styled.header`
   color: white;
   padding:0.5em 0;
 `
-
 export const HeaderPanel = styled.ul`
   display: flex;
   justify-content: space-between;

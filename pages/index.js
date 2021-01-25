@@ -15,7 +15,6 @@ const App = () => {
       user:e.target.value
     })
   }, [])
-
   return (
     <Layout>
       <Head>

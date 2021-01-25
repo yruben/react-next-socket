@@ -62,7 +62,6 @@ const GlobalStyle = createGlobalStyle`
       opacity:1;
     }
   }
-  
   @keyframes fade-in {
     0% {
       opacity:0;
