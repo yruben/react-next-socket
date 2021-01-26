@@ -13,7 +13,6 @@ export const HeaderPanel = styled.ul`
   margin:0;
   align-items: center;
 `
-
 export const HeaderPanelContents = styled.li`
   padding: 0.6em 0.8em;
 `
