@@ -54,13 +54,12 @@ yarn dev
 |-- next.config.js
 |-- package.json
 |-- README.md
-|-- server.js
 |-- socket-context.js
 |-- yarn.lock
 ```
 
 ## Author
 
-👤 **Yainier M. Ruben <y.ruben1901@gmail.com>**
+👤 **Mauricio Leal <lealmauro586@gmail.com>**
 
-* Github: [@yruben](https://github.com/yruben)
+* Github: [@mleal94](https://github.com/mleal94)
