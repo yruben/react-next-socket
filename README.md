@@ -57,9 +57,3 @@ yarn dev
 |-- socket-context.js
 |-- yarn.lock
 ```
-
-## Author
-
-👤 **Mauricio Leal <lealmauro586@gmail.com>**
-
-* Github: [@mleal94](https://github.com/mleal94)
